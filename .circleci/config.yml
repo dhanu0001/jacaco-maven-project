@@ -42,9 +42,9 @@ jobs:
             # cd /home/circleci/project/
             cd /home/circleci/project/
             ls -lrt /home/circleci/project           
-            mvn clean install
-            mvn clean package
-            # mvn install -DskipTests
+            # mvn clean install
+            # mvn clean package
+            mvn install -DskipTests
             # mvn test
             # mvn checkstyle:checkstyle
             # curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=$Project >result.json
