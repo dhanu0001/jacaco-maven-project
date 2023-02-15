@@ -45,10 +45,10 @@ jobs:
             mvn clean install
             mvn clean package
             # mvn install -DskipTests
-            mvn test
-            mvn checkstyle:checkstyle
-            curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=$Project >result.json
-            ls -lrt /home/circleci/project/target/
+            # mvn test
+            # mvn checkstyle:checkstyle
+            # curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=$Project >result.json
+            # ls -lrt /home/circleci/project/target/
             # mvn install -DskipTests
             # mvn sonar:sonar
             # ls -lrt /home/circleci/project/
